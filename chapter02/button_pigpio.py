@@ -25,7 +25,7 @@ pi.write(LED_GPIO_PIN, 0) # LED Off
 # Button provides 'Input'
 pi.set_mode(BUTTON_GPIO_PIN, pigpio.INPUT)                                    # (1)
 pi.set_pull_up_down(BUTTON_GPIO_PIN, pigpio.PUD_UP)                           # (2)
-pi.set_glitch_filter(BUTTON_GPIO_PIN, 10000) # microseconds debounce          # (3)
+pi.set_glitch_filter(BUTTON_GPIO_PIN, 100000) # microseconds debounce         # (3)
 
 
 # Button pressed handler
